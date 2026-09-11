@@ -2,7 +2,7 @@
 
 import { siteConfig } from "@/lib/data";
 import { motion } from "framer-motion";
-import { ArrowDownRight, Github, Linkedin, Mail, Sparkles } from "lucide-react";
+import { ArrowDownRight, BriefcaseBusiness, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 const fadeUp = {
@@ -14,7 +14,7 @@ const fadeUp = {
   }),
 };
 
-const specialties = ["NestJS", "Next.js", "RAG Pipelines", "LLM Agents", "LangGraph"];
+const specialties = ["Node.js", "NestJS", "Next.js", "RAG Pipelines", "LLM Agents", "LangGraph"];
 
 export function Hero() {
   return (
@@ -102,6 +102,15 @@ export function Hero() {
                 Explore Projects
                 <ArrowDownRight className="h-4 w-4" />
               </Link>
+              <a
+                href={siteConfig.links.upwork}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-[#6FDA44]/40 bg-[#6FDA44]/10 px-6 py-3.5 font-mono text-[12px] uppercase tracking-[0.18em] text-[#d9ffd1] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#6FDA44]/60 hover:bg-[#6FDA44]/15"
+              >
+                <BriefcaseBusiness className="h-4 w-4" />
+                Contact on Upwork
+              </a>
               <Link
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-transparent px-6 py-3.5 font-mono text-[12px] uppercase tracking-[0.18em] text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:bg-accent/5"

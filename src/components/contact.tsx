@@ -3,7 +3,7 @@
 import { SectionLabel } from "@/components/section-label";
 import { siteConfig } from "@/lib/data";
 import { motion } from "framer-motion";
-import { Check, Copy, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { BriefcaseBusiness, Check, Copy, Github, Linkedin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -88,6 +88,21 @@ export function Contact() {
             </div>
 
             <div className="space-y-4">
+              <a
+                href={siteConfig.links.upwork}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="interactive-card flex items-center gap-4 rounded-xl border border-[#6FDA44]/40 bg-[#6FDA44]/10 p-4"
+              >
+                <BriefcaseBusiness className="h-5 w-5 text-[#6FDA44]" />
+                <div>
+                  <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#d9ffd1]">
+                    Upwork
+                  </div>
+                  <div className="text-sm text-foreground">Contact me for backend, AI, and full-stack work</div>
+                </div>
+              </a>
+
               <a
                 href={`tel:${siteConfig.phone}`}
                 className="interactive-card flex items-center gap-4 rounded-xl border border-border bg-surface/60 p-4"

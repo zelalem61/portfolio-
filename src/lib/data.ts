@@ -5,12 +5,12 @@ export const siteConfig = {
   title: "Software Engineer",
   location: "Addis Ababa, Ethiopia",
   email: "zelalemhab19@gmail.com",
-  phone: "0967787318",
+  phone: "+251967787318",
   links: {
     github: "https://github.com/zelalem61",
     linkedin: "https://www.linkedin.com/in/zelalem-habtamu-6abab7264/",
     leetcode: "https://leetcode.com/u/zelalem61/",
-    upwork: "https://www.upwork.com/freelancers/~019a7c37b5f2be212f",
+    upwork: "https://www.upwork.com/freelancers/backendai",
   },
   hero: {
     headline: "Software engineer",
