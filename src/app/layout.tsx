@@ -4,6 +4,8 @@ import { Instrument_Serif } from "next/font/google";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.zelalem.et";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,27 +24,63 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Zelalem Habtamu — Software Engineer",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Zelalem Habtamu | Backend Developer & AI Developer",
+    template: "%s | Zelalem Habtamu",
+  },
   description:
-    "Software engineer building scalable backend systems, full-stack platforms, and distributed microservices. Based in Addis Ababa, Ethiopia.",
+    "Zelalem Habtamu is a backend developer, AI developer, and software engineer building scalable backend systems, microservices, AI-powered products, and full-stack web platforms.",
   keywords: [
     "Zelalem Habtamu",
-    "Software Engineer",
-    "Backend Developer",
-    "NestJS",
-    "React",
-    "TypeScript",
-    "Portfolio",
+    "Zelalem Habtamu backend developer",
+    "backend developer",
+    "AI developer",
+    "software engineer",
+    "full stack developer",
+    "NestJS developer",
+    "Next.js developer",
+    "TypeScript developer",
+    "AI engineer",
+    "microservices developer",
+    "Ethiopia software engineer",
+    "Addis Ababa software engineer",
+    "portfolio",
   ],
+  applicationName: "Zelalem Habtamu Portfolio",
   authors: [{ name: "Zelalem Habtamu" }],
-  icons: {
-    icon: [{ url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>" }],
+  creator: "Zelalem Habtamu",
+  publisher: "Zelalem Habtamu",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "/",
   },
   openGraph: {
-    title: "Zelalem Habtamu — Software Engineer",
+    title: "Zelalem Habtamu | Backend Developer & AI Developer",
     description:
-      "Software engineer building scalable backend systems and full-stack platforms.",
+      "Backend developer and AI developer creating high-performance backend systems, scalable platforms, and AI-powered solutions.",
     type: "website",
+    url: siteUrl,
+    siteName: "Zelalem Habtamu",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zelalem Habtamu | Backend Developer & AI Developer",
+    description:
+      "Backend developer and AI developer building scalable systems, microservices, and AI-powered web products.",
+  },
+  icons: {
+    icon: [{ url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>" }],
   },
 };
 
