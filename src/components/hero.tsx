@@ -165,7 +165,7 @@ export function Hero() {
               />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt={`${siteConfig.name} portrait`}
                 className="relative aspect-[4/5] w-full object-cover grayscale contrast-[1.05] transition duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
               />
