@@ -80,7 +80,9 @@ export const metadata: Metadata = {
       "Backend developer and AI developer building scalable systems, microservices, and AI-powered web products.",
   },
   icons: {
-    icon: [{ url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>" }],
+    icon: [{ url: "/zh-favicon.png", rel: "icon" }],
+    shortcut: ["/zh-favicon.png"],
+    apple: ["/zh-favicon.png"],
   },
 };
 
